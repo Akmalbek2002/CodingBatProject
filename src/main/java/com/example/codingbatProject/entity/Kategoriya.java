@@ -6,14 +6,18 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Data
 @Entity
-public class Tillar {
+public class Kategoriya {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(nullable = false)
-    private String nomi;
+    private String kategoriyaNomi;
+    @Column(nullable = false)
+    private String izoh;
+    @Column(nullable = false)
+    private Integer yulduzchalarSoni;
 }

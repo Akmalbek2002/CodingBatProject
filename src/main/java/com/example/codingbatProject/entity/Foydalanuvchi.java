@@ -10,10 +10,13 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Data
 @Entity
-public class Tillar {
+public class Foydalanuvchi {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column(nullable = false,unique = true)
+    private String email;
     @Column(nullable = false)
-    private String nomi;
+    private String parol;
+
 }
