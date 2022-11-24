@@ -19,10 +19,10 @@ public class Savollar {
     @Column(nullable = false)
     private String savolMatni;
     @Column(nullable = false)
-    private String yechimNamunasi;
+    private String yechim;
     @Column(nullable = false)
     private String funksiya;
-    @Column(nullable = false)
-    private String namunasi;
+    @OneToOne
+    Namuna namuna;
 
 }
