@@ -20,4 +20,5 @@ public class Kategoriya {
     private String izoh;
     @Column(nullable = false)
     private Integer yulduzchalarSoni;
+
 }
