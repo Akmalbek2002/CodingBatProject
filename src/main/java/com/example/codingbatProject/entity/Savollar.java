@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -24,5 +25,7 @@ public class Savollar {
     private String funksiya;
     @OneToOne
     Namuna namuna;
+    @ManyToMany
+    List<Kategoriya> kategoriyaList;
 
 }

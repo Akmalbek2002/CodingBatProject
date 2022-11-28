@@ -19,6 +19,6 @@ public class Javoblar {
     Savollar savollar;
     @Column(nullable = false)
     private boolean tekshirish;
-    @ManyToMany
-    List<Foydalanuvchi>list;
+    @ManyToOne
+    Foydalanuvchi foydalanuvchi;
 }
